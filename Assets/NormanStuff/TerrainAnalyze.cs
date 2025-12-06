@@ -1,15 +1,13 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class MoveTowards : MonoBehaviour
+public class TerrainAnalyze : MonoBehaviour
 {
-    [SerializeField] Transform target;
-    NavMeshAgent agent;
+    public NavMeshData nmd;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        agent = GetComponent<NavMeshAgent>();
-        agent.SetDestination(target.position);
+        
     }
 
     // Update is called once per frame
